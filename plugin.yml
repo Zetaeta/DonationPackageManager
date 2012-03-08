@@ -1,0 +1,20 @@
+author: zetaeta
+database: false
+description: Manages donation packages, of course.
+generator: http://dinnerbone.com/minecraft/tools/pluginator/
+main: net.zetaeta.plugins.donationpackagemanager.DonationPackageManager
+name: DonationPackageManager
+startup: postworld
+version: '1.0'
+commands:
+    dpmdonate:
+        usage: GTFO
+    dpm:
+        usage: /<command> reload
+permissions:
+    dpm.donate:
+        default: op
+    dpm.reload:
+        default: op
+    dpm.defaultperm:
+        default: op

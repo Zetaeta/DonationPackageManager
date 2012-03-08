@@ -1,0 +1,21 @@
+# Put your commands under commands.
+# ::format: The format of the command. Words prefixed by "+" will be
+# counted as variables and can be put back into out_commands.
+# ::required_package: donation package required for upgrade.
+# Remove for a command non-package-based.
+# ::returned package: donation package added bu upgrade.
+# Remove for a command non-package-based.
+# ::out_commands: the commands that will be sent if the player 
+# meets the requirements.
+# ::player_index: The index of the player variable in the command,
+# for donation package control.
+
+commands:
+    example:
+        format: example setgroup +name +group
+        required_package: administrator_person_guy
+        returned_package: donator-tier9001
+        out_commands: 
+            - say +name +group
+        player_index: 2
+        permission: dpm.example
